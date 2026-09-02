@@ -1,0 +1,44 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class InputManager : MonoBehaviour
+{
+    private PlayerInput playerInput;
+    private PlayerInput.OnFootActions onFoot;
+
+    private PlayerMotor motor;
+    private PlayerLook look;
+    void Awake()
+    {
+        playerInput = new PlayerInput();
+        onFoot = playerInput.OnFoot;
+
+        motor = GetComponent<PlayerMotor>();
+        look = GetComponent<PlayerLook>();
+
+        // onFoot.Jump.performed += ContextMenu => motor.Jump();
+    }
+    private void FixedUpdate()
+    {
+        Vector2 movementInput = onFoot.Movement.ReadValue<Vector2>();
+        motor.ProcessMove(movementInput);
+    }
+
+    private void LateUpdate()
+    {
+        Vector2 lookInput = onFoot.Look.ReadValue<Vector2>();
+        look.ProcessLook(lookInput);
+    }
+
+
+    private void OnEnable()
+    {
+        onFoot.Enable();
+    }
+    private void OnDisable()
+    {
+        onFoot.Disable();
+    }
+}

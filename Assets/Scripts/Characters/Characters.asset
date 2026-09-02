@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ef4202b7869cfd4bb697c159658b519, type: 3}
+  m_Name: Characters
+  m_EditorClassIdentifier: 
+  character:
+  - unlocked: 1
+    unlockCost: 0
+    id: 1
+    name: Marcus
+    description: 'Marcus is a former soldier who is strong, tough, and has seen it
+      all. He is a bit of a loner, preferring to keep to himself and let his actions
+      speak for themselves. '
+    skillDescription: 'Health increase 15%
+
+      Hand gun damage increase 15%'
+    icon: {fileID: 21300000, guid: e4e34b75666b0664daa2d99f15687046, type: 3}
+    knifeDamageBuff: 1
+    handgunDamageBuff: 1
+    highestWave: 0
+  - unlocked: 1
+    unlockCost: 30
+    id: 2
+    name: Jake
+    description: 'Jake is a former professional athlete who has always been known
+      for his speed and agility. '
+    skillDescription: 'Fix price -50%
+
+      Door price -20%'
+    icon: {fileID: 21300000, guid: 6876062b8b0e4a84ba2cc5fa173ab216, type: 3}
+    knifeDamageBuff: 1
+    handgunDamageBuff: 1
+    highestWave: 0
+  - unlocked: 0
+    unlockCost: 100
+    id: 3
+    name: Maya
+    description: 'Maya is a nurse who has seen the horrors of the zombie apocalypse
+      firsthand. '
+    skillDescription: 'Starts with a health potion
+
+      Knife damage increase 20%'
+    icon: {fileID: 21300000, guid: 7b220c7ba8e44af45a7b935f5bf6ac72, type: 3}
+    knifeDamageBuff: 1
+    handgunDamageBuff: 1
+    highestWave: 0
+  - unlocked: 0
+    unlockCost: 150
+    id: 4
+    name: Sarah
+    description: Sarah is a scientist who has always been interested in studying
+      viruses and diseases.
+    skillDescription: 'Move speed increase 10%
+
+      Shot gun damage increase 10%'
+    icon: {fileID: 21300000, guid: 38024b25de12b6c438d21f59c84f90e2, type: 3}
+    knifeDamageBuff: 1
+    handgunDamageBuff: 1
+    highestWave: 0

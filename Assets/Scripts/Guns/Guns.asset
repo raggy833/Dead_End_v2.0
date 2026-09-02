@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9948e1045cd3d943a476d250a9106b9, type: 3}
+  m_Name: Guns
+  m_EditorClassIdentifier: 
+  allGuns:
+  - id: 0
+    name: M1911
+    description: 
+    mag_currentLv: 1
+    mag_lv1_value: 8
+    mag_current_value_InGame: 10
+    mag_current_max_InGame: 10
+    mag_IncreasePerUpgrade: 2
+    ammoTotal_currentLv: 1
+    ammoTotal_lv1_value: 24
+    ammoTotal_current_value_InGame: 30
+    ammoTotal_current_max_InGame: 30
+    ammoTotal_IncreasePerUpgrade: 6
+    damage_currentLv: 1
+    damage_lv1_value: 16
+    damage_IncreasePerUpgrade: 4
+    bullets_per_shot: 1
+    price: 0
+    gears: 0
+    shootLag: 0.35
+    gameObject: {fileID: 6006707191828284213, guid: 6bfa11d4155d78d4ea1649ace406c539,
+      type: 3}
+    holdPos: {fileID: 1807656138063020381, guid: f1182fa4fde3bdc4593f0ef969f9d85b,
+      type: 3}
+    sprite_white: {fileID: 21300000, guid: 90372db873c8c914a89c7f09eb03ddc2, type: 3}
+    shootSound: 
+    reloadSound: 
+    gunType: 0
+    rarity: 0
+    recoilX: 0
+    recoilY: 0
+    recoilZ: 0
+    aimRecoilX: 0
+    aimRecoilY: 0
+    aimRecoilZ: 0
+    snappiness: 0
+    returnSpeed: 0
+  - id: 1
+    name: Uzi
+    description: 
+    mag_currentLv: 1
+    mag_lv1_value: 8
+    mag_current_value_InGame: 10
+    mag_current_max_InGame: 10
+    mag_IncreasePerUpgrade: 2
+    ammoTotal_currentLv: 1
+    ammoTotal_lv1_value: 24
+    ammoTotal_current_value_InGame: 30
+    ammoTotal_current_max_InGame: 30
+    ammoTotal_IncreasePerUpgrade: 6
+    damage_currentLv: 1
+    damage_lv1_value: 16
+    damage_IncreasePerUpgrade: 4
+    bullets_per_shot: 1
+    price: 0
+    gears: 0
+    shootLag: 0.35
+    gameObject: {fileID: 2317478380946588256, guid: 9f58b64b6a9746842965feae03b53e63,
+      type: 3}
+    holdPos: {fileID: 1807656138063020381, guid: f1182fa4fde3bdc4593f0ef969f9d85b,
+      type: 3}
+    sprite_white: {fileID: 21300000, guid: 9d20aeaaeeed2c14faa8c8d7d3605c8f, type: 3}
+    shootSound: 
+    reloadSound: 
+    gunType: 1
+    rarity: 1
+    recoilX: 0
+    recoilY: 0
+    recoilZ: 0
+    aimRecoilX: 0
+    aimRecoilY: 0
+    aimRecoilZ: 0
+    snappiness: 0
+    returnSpeed: 0
+  - id: 2
+    name: M4
+    description: 
+    mag_currentLv: 1
+    mag_lv1_value: 8
+    mag_current_value_InGame: 10
+    mag_current_max_InGame: 10
+    mag_IncreasePerUpgrade: 2
+    ammoTotal_currentLv: 1
+    ammoTotal_lv1_value: 24
+    ammoTotal_current_value_InGame: 30
+    ammoTotal_current_max_InGame: 30
+    ammoTotal_IncreasePerUpgrade: 6
+    damage_currentLv: 1
+    damage_lv1_value: 16
+    damage_IncreasePerUpgrade: 4
+    bullets_per_shot: 1
+    price: 0
+    gears: 0
+    shootLag: 0.35
+    gameObject: {fileID: 1236257789494122, guid: 8b0b86b42def11849a8eba21f4a6a684,
+      type: 3}
+    holdPos: {fileID: 1807656138063020381, guid: f1182fa4fde3bdc4593f0ef969f9d85b,
+      type: 3}
+    sprite_white: {fileID: 21300000, guid: c4cde927c7f2ece42ae8f4828554bc11, type: 3}
+    shootSound: 
+    reloadSound: 
+    gunType: 5
+    rarity: 2
+    recoilX: 0
+    recoilY: 0
+    recoilZ: 0
+    aimRecoilX: 0
+    aimRecoilY: 0
+    aimRecoilZ: 0
+    snappiness: 0
+    returnSpeed: 0
