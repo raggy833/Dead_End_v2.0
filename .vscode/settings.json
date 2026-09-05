@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Dead_End.sln"
+    "dotnet.defaultSolution": "Dead_End_v2.sln"
 }
