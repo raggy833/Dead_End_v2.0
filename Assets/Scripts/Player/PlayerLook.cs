@@ -7,6 +7,7 @@ using UnityEngine.EventSystems;
 public class PlayerLook : MonoBehaviour
 {
     public Camera cam;
+    public Transform playerRoot;
     private float xRotation = 0f;
     public float xSensitivity = 10f;
     public float ySensitivity = 10f;
@@ -56,7 +57,7 @@ public class PlayerLook : MonoBehaviour
         cam.transform.localRotation = Quaternion.Euler(xRotation, 0, 0);
 
         // Rotate player to look left and right
-        transform.Rotate(Vector3.up * (mouseX * Time.deltaTime) * xSensitivity);
+        playerRoot.Rotate(Vector3.up * (mouseX * Time.deltaTime) * xSensitivity);
     }
 
 

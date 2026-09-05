@@ -18,7 +18,7 @@ public class InputManager : MonoBehaviour
         motor = GetComponent<PlayerMotor>();
         look = GetComponent<PlayerLook>();
 
-        // onFoot.Jump.performed += ContextMenu => motor.Jump();
+        // onFoot.Jump.performed += ctx => motor.Jump(); // Jump action not yet defined in PlayerInput.inputactions
     }
     private void FixedUpdate()
     {

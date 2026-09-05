@@ -100,6 +100,7 @@ public class Enemy : MonoBehaviour
     }
     private void GhoulFollowTarget()
     {
+        if (currentTarget == null) currentTarget = player.transform;
         float distance = Vector3.Distance(currentTarget.transform.position, agent.transform.position);
         agent.SetDestination(currentTarget.position);
         roarCounter -= Time.deltaTime;
@@ -126,35 +127,21 @@ public class Enemy : MonoBehaviour
     }
     private void LizardMonsterCheckState()
     {
-        // TODO: Test
-
-        currentTarget = player.transform;
-        float distance = Vector3.Distance(currentTarget.transform.position, agent.transform.position);
-        agent.SetDestination(player.transform.position);
-        Debug.Log(agent.destination);
-        // If Player gets too close, target will change to player
+        if (currentTarget == null) currentTarget = player.transform;
         float distanceToPlayer = Vector3.Distance(player.transform.position, agent.transform.position);
-        Debug.Log(distanceToPlayer);
-        if (currentTarget != player.transform && distanceToPlayer < 3)
+        if (distanceToPlayer < 3)
         {
             currentTarget = player.transform;
         }
-        else
+        float distance = Vector3.Distance(currentTarget.transform.position, agent.transform.position);
+        agent.SetDestination(currentTarget.position);
+        if (distance >= 1.5f)
         {
-
-            agent.SetDestination(currentTarget.position);
-            if (distance >= 1.5f)
-            {
-                FollowTarget();
-            }
-            else if (distance < 1.5f && !attacking)
-            {
-                StartCoroutine(AttackPlayer());
-            }
-            else
-            {
-
-            }
+            FollowTarget();
+        }
+        else if (distance < 1.5f && !attacking)
+        {
+            StartCoroutine(AttackPlayer());
         }
     }
     private void CheckState()
@@ -458,8 +445,7 @@ public class Enemy : MonoBehaviour
             this.GetComponent<CapsuleCollider>().enabled = false;
             this.GetComponent<Animator>().SetBool("Walking", false);
             this.GetComponent<Animator>().SetBool("Dead", true);
-            // TODO change to spider sound
-            AudioManager.instance.Play("Zombie_Hurt3");
+            AudioManager.instance.Play("Spider_Death");
             this.dead = true;
         }
     }
